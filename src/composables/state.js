@@ -1,4 +1,4 @@
-import { readonly, ref } from 'vue'
+import { readonly, ref, reactive } from 'vue'
 
 export function useState(initialState) {
   const state = ref(initialState)
@@ -8,4 +8,15 @@ export function useState(initialState) {
   }
 
   return [readonly(state), setState]
+}
+
+
+export function useObjectState(initialState) {
+  const state = reactive(initialState)
+
+  const setObjectState = (newState) => {
+    state.value = newState
+  }
+
+  return [readonly(state), setObjectState]
 }

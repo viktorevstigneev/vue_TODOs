@@ -1,0 +1,17 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 5px;
+  border: solid 1px lightgrey;
+  padding: 10px;
+}
+
+.card__title{
+    color: black;
+}
+
+.card__description{
+    color: rgb(43, 43, 43);
+}

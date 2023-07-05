@@ -1,0 +1,165 @@
+.users__container {
+  width: 80%;
+  margin: 20px auto 0;
+}
+
+.users__title {
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 5px;
+
+  color: #fff;
+  text-shadow: 0 0 8px rgb(255, 255, 255);
+}
+
+.users__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 0.25fr));
+  column-gap: 15px;
+  row-gap: 15px;
+
+  margin-top: 50px;
+  padding-bottom: 100px;
+  padding-left: 0;
+}
+
+.users__item {
+  position: relative;
+  list-style: none;
+  background: rgb(218, 218, 218);
+
+  font-weight: 600;
+
+  color: #000000;
+  padding: 10px 0 0 0;
+  margin-bottom: 3px;
+  cursor: pointer;
+}
+
+.users__delete-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 30px;
+  color: red;
+  z-index: 1000;
+}
+
+.users__avatar {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.users__name {
+  text-align: center;
+  margin-top: 10px;
+  color: #242424;
+  text-transform: uppercase;
+}
+
+.users__email {
+  position: relative;
+  display: block;
+  color: #6732f8;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  border-bottom: 1px solid #6732f8;
+  border-top: 1px solid #6732f8;
+
+  overflow-wrap: normal;
+  word-wrap: normal;
+  word-break: break-all;
+  line-break: auto;
+  hyphens: auto;
+
+  &::before {
+    content: '\20AA    ';
+    color: #6732f8;
+    font-size: 20px;
+  }
+  &::after {
+    content: '   \20AA';
+    color: #6732f8;
+    font-size: 20px;
+  }
+}
+
+.users__edit {
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+  border: 3px solid #ffd000;
+
+  cursor: pointer;
+
+  &:hover {
+    background: #6732f8;
+    color: #fff;
+  }
+}
+
+.users__phone {
+  display: block;
+  margin-top: 50px;
+  padding: 10px;
+  background: rgb(253, 176, 8);
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+}
+
+.task__item {
+  color: black;
+}
+
+.task__empty {
+  color: red;
+}
+
+.task__list {
+  list-style: none;
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.edit__input {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.edit__button {
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+  padding: 10px;
+  background: #ffd000;
+  border: none;
+  color: #222222;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:hover{
+    background: #6732f8;
+    color: #fff;
+  }
+}
+
+
+@media (max-width: 500px){
+  .users__list{
+    display: block;
+    padding: 0;
+  }
+
+  .users__item{
+    max-width: 250px;
+    margin: 15px auto;
+  }
+}

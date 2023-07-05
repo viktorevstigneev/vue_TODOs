@@ -1,0 +1,28 @@
+.user__wrapper {
+  margin: 10px auto;
+  width: 50%;
+  min-width: 200px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 100%;
+  grid-gap: 5px;
+}
+
+.user__input {
+  border-radius: 5px;
+  border: solid 1px lightgrey;
+  padding: 10px;
+}
+
+.user__button {
+  border-radius: 5px;
+  border: solid 1px lightgrey;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  &:hover{
+    background: rgb(255, 217, 0);
+  }
+}
+
+

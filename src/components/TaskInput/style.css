@@ -1,0 +1,22 @@
+.task__wrapper {
+  margin: 10px 0;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 100%;
+  grid-gap: 5px;
+}
+
+.task__input {
+  border-radius: 5px;
+  border: solid 1px lightgrey;
+  padding: 10px;
+}
+
+.task__button {
+  border-radius: 5px;
+  border: solid 1px lightgrey;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
